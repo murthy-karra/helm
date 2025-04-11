@@ -1,0 +1,6 @@
+kubernetesClusterDomain: cluster.local
+nstarxPatchJob:
+  patchContainer:
+    image:
+      repository: nstarx.azurecr.io/nstarx_kubeflow_core
+      tag: v1

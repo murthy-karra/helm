@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "nstarx-kubeflow-core.fullname" . }}-nstarx-patch-job
+  labels:
+  {{- include "nstarx-kubeflow-core.labels" . | nindent 4 }}
+spec:
+  template:
+    spec:
+      serviceAccountName: {{ include "nstarx-kubeflow-core.fullname" . }}-serviceaccount
+      containers:
+        - env:
+            - name: KUBERNETES_CLUSTER_DOMAIN
+              value: {{ quote .Values.kubernetesClusterDomain }}
+          image: {{ .Values.nstarxPatchJob.patchContainer.image.repository }}:{{ .Values.nstarxPatchJob.patchContainer.image.tag | default .Values.tag }}
+          name: patch-container
+          resources: { }
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: azure-cr-secret
