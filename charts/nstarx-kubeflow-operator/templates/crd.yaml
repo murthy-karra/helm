@@ -1,0 +1,65 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: kubeflows.aizone.example.com
+  labels:
+    {{- include "kubeflow-operator.labels" . | nindent 4 }}
+spec:
+  group: aizone.example.com
+  names:
+    kind: Kubeflow
+    plural: kubeflows
+    singular: kubeflow
+    shortNames:
+      - kf
+  scope: Namespaced
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                notificationUrl:
+                  type: string
+                releaseName:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.releaseName | quote }}
+                namespace:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.namespace | quote }}
+                repoName:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.repoName | quote }}
+                repoUrl:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.repoUrl | quote }}
+                chartName:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.chartName | quote }}
+                chartVersion:
+                  type: string
+                  default: {{ .Values.defaultKubeflowConfig.chartVersion | quote }}
+                customValues:
+                  type: object
+                  x-kubernetes-preserve-unknown-fields: true
+              required:
+                - notificationUrl
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                  enum: [ pending, processed, done, error ]
+                message:
+                  type: string
+                lastUpdated:
+                  type: string
+                  format: date-time
+              required: [ phase ]
+      subresources:
+        status: {}

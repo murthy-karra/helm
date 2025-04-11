@@ -1,0 +1,11 @@
+apiVersion: v2
+name: nstarx-kubeflow-operator
+description: A Helm chart for deploying the Kubeflow Kubernetes Operator
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - kubeflow
+  - operator
+  - kubernetes
+  - helm

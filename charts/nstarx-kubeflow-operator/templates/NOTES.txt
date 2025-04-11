@@ -1,0 +1,36 @@
+Thank you for installing {{ .Chart.Name }}.
+
+The Kubeflow Operator has been deployed to your cluster.
+
+To create a Kubeflow resource, create a YAML file like this:
+
+apiVersion: aizone.example.com/v1
+kind: Kubeflow
+metadata:
+  name: sample-kubeflow
+  namespace: default
+spec:
+  notificationUrl: "https://example.com/webhook"
+  releaseName: "nstarx-kubeflow-operator"
+  namespace: "kubeflow-system"
+  repoName: "murthy-repo"
+  repoUrl: "https://murthy-karra.github.io/helm"
+  chartName: "nstarx-kubeflow-core"
+  chartVersion: "0.0.1"
+  customValues:
+    service:
+      type: ClusterIP
+      port: 8080
+status:
+  phase: pending
+  message: "Resource created, waiting for operator processing"
+  lastUpdated: "2025-04-11T00:00:00Z"
+
+Then apply it with:
+
+  kubectl apply -f your-file.yaml
+
+Check the status with:
+
+  kubectl get kubeflows
+  kubectl describe kubeflow sample-kubeflow

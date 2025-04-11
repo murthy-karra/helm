@@ -1,0 +1,56 @@
+# Default values for kubeflow-operator.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: karrad/kubeflow-operator
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+rbac:
+  # Specifies whether RBAC resources should be created
+  create: true
+  # Use cluster admin role (full permissions)
+  useClusterAdmin: true
+
+podAnnotations: {}
+podSecurityContext: {}
+
+securityContext: {}
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+# Define the default values for kubeflow resources 
+defaultKubeflowConfig:
+  releaseName: "nstarx-kubeflow-operator"
+  namespace: "default"
+  repoName: "murthy-repo"
+  repoUrl: "https://murthy-karra.github.io/helm"
+  chartName: "nstarx-kubeflow-operator"
+  chartVersion: "0.0.1"

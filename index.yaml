@@ -3,9 +3,9 @@ entries:
   adventureworks:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.730091-07:00"
+    created: "2025-04-11T16:54:16.028342-07:00"
     description: A Helm chart for Kubernetes
-    digest: 4c3050e112af7ad1c17d4484873f07cce873b7f90a26c2706d8dc8ac6a8dee5e
+    digest: 7f8806e2e4da799dcb6798c146fe6a038c5f458d2a5de209e89eb71b5e414ccb
     name: adventureworks
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   chart:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.730358-07:00"
+    created: "2025-04-11T16:54:16.028583-07:00"
     description: A Helm chart for Kubernetes
-    digest: 20666105937cc34ec42c3cb1d5ffc24feedc660f6a1a208f4fc20b275eaea43f
+    digest: 9e17ebae5741f32aba9c9dfcaddf7910710415814005b3271d5cd23633157cac
     name: chart
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   dlnp-ops-be:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.730643-07:00"
+    created: "2025-04-11T16:54:16.02885-07:00"
     description: A Helm chart for DLNP AI Zone Backend
-    digest: d80ca2b056a5896e06982929b8a80878fa8d6a77fdf59357b52d18fe0df28cd8
+    digest: 5b7b4b6219a8bbb0b22b3551553a3fc3c80c790c1aea29b00cb82ad43e6b8b4c
     name: dlnp-ops-be
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   dlnp-ops-fe:
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2025-04-11T09:21:16.731493-07:00"
+    created: "2025-04-11T16:54:16.029025-07:00"
     description: A Helm chart for dlnp-ops-fe
-    digest: 3068060ff8e7c98f5a2d3cd6cca6f975068f11493ccd362e07397311513f8299
+    digest: ae9625b96e8195516d7a85a94c5915ccc1f9ed7e7c16e1f593bdfd479984c640
     name: dlnp-ops-fe
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   fl-admin:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.731843-07:00"
+    created: "2025-04-11T16:54:16.029274-07:00"
     description: A Helm chart for Kubernetes
-    digest: e8c02dba238254a73eaf8cd2445e5b47f31cdd95bf225f31709dbaab751a9162
+    digest: c788f134bb17086be3e4be2889836fa47ff9ed88a75324b0c87cbbb33e5b536e
     name: fl-admin
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   my-cm:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.732076-07:00"
+    created: "2025-04-11T16:54:16.029449-07:00"
     description: A Helm chart for Kubernetes
-    digest: cd4731ff3515a204a974b2012ca54072483b5e461270c20aec88dd5321caed31
+    digest: 1af9b1cac89a96752cb1465350f40e7ea7fca08b2220039f4a701ebc3e0a8774
     name: my-cm
     type: application
     urls:
@@ -69,20 +69,36 @@ entries:
   nstarx-kubeflow-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-04-11T09:21:16.732336-07:00"
+    created: "2025-04-11T16:54:16.029649-07:00"
     description: A Helm chart for Kubernetes
-    digest: 055cb3c44f6b0064ceac616a7c1bfec35f1fd87ad6d2c1ea1616f3e887a9d79c
+    digest: 7afc0b03092a014e93543ca64c792965d2a3b4c6e0f21ebd27d689c470e41776
     name: nstarx-kubeflow-core
     type: application
     urls:
     - https://murthy-karra.github.io/helm/releases/nstarx-kubeflow-core-0.0.1.tgz
     version: 0.0.1
+  nstarx-kubeflow-operator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-04-11T16:54:16.030007-07:00"
+    description: A Helm chart for deploying the Kubeflow Kubernetes Operator
+    digest: 49709da5592a0b749aabd738cd1a78f5cbb7ac1eeb69f836cc30a45a9c88b176
+    keywords:
+    - kubeflow
+    - operator
+    - kubernetes
+    - helm
+    name: nstarx-kubeflow-operator
+    type: application
+    urls:
+    - https://murthy-karra.github.io/helm/releases/nstarx-kubeflow-operator-0.1.0.tgz
+    version: 0.1.0
   sample-webapp:
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2025-04-11T09:21:16.732602-07:00"
+    created: "2025-04-11T16:54:16.030231-07:00"
     description: A Helm chart for Kubernetes
-    digest: 67968af93578837d0a19459e6f68db9d5f465f1e0db148311faec90b5ccf92bc
+    digest: 3a86489343148696da115cdef19149a778fc14cb4b5131597f14b6ce8056700b
     name: sample-webapp
     type: application
     urls:
@@ -91,7 +107,7 @@ entries:
   spark-admin:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-11T09:21:16.73288-07:00"
+    created: "2025-04-11T16:54:16.030472-07:00"
     description: A Helm chart for Kubernetes
     digest: 32f1a9422f4163b88f0692be82d98f1a9a43808ad763e80e7bd641871478390b
     name: spark-admin
@@ -99,4 +115,4 @@ entries:
     urls:
     - https://murthy-karra.github.io/helm/releases/spark-admin-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-11T09:21:16.729732-07:00"
+generated: "2025-04-11T16:54:16.028029-07:00"
