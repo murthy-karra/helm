@@ -3,89 +3,100 @@ entries:
   adventureworks:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-10T16:10:44.859572+03:00"
+    created: "2025-04-11T09:21:16.730091-07:00"
     description: A Helm chart for Kubernetes
-    digest: 1bf97a9674298b0617c4ac9bc45c770e777637edd7344f0f18a32782e77aab51
+    digest: 4c3050e112af7ad1c17d4484873f07cce873b7f90a26c2706d8dc8ac6a8dee5e
     name: adventureworks
     type: application
     urls:
-    - https://nstarx.github.io/helm/adventureworks-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/adventureworks-0.1.0.tgz
+    version: 0.1.0
+  chart:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-04-11T09:21:16.730358-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 20666105937cc34ec42c3cb1d5ffc24feedc660f6a1a208f4fc20b275eaea43f
+    name: chart
+    type: application
+    urls:
+    - https://murthy-karra.github.io/helm/releases/chart-0.1.0.tgz
     version: 0.1.0
   dlnp-ops-be:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-10T16:10:44.859719+03:00"
+    created: "2025-04-11T09:21:16.730643-07:00"
     description: A Helm chart for DLNP AI Zone Backend
-    digest: 5153b4a27bcf34db847277f42feccab8a225962a29199f7e62286a1371c21c72
+    digest: d80ca2b056a5896e06982929b8a80878fa8d6a77fdf59357b52d18fe0df28cd8
     name: dlnp-ops-be
     type: application
     urls:
-    - https://nstarx.github.io/helm/dlnp-ops-be-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/dlnp-ops-be-0.1.0.tgz
     version: 0.1.0
   dlnp-ops-fe:
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2025-04-10T16:10:44.859803+03:00"
+    created: "2025-04-11T09:21:16.731493-07:00"
     description: A Helm chart for dlnp-ops-fe
-    digest: eb3df81492cc9ae522cfbb9bf781d9e2677f995596d8cea28321208fafdf7469
+    digest: 3068060ff8e7c98f5a2d3cd6cca6f975068f11493ccd362e07397311513f8299
     name: dlnp-ops-fe
     type: application
     urls:
-    - https://nstarx.github.io/helm/dlnp-ops-fe-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/dlnp-ops-fe-0.1.0.tgz
     version: 0.1.0
   fl-admin:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-10T16:10:44.859926+03:00"
+    created: "2025-04-11T09:21:16.731843-07:00"
     description: A Helm chart for Kubernetes
-    digest: 1997dc6b5374b543472ab26321a1236cde2b879a4343632679ec540de0f978fd
+    digest: e8c02dba238254a73eaf8cd2445e5b47f31cdd95bf225f31709dbaab751a9162
     name: fl-admin
     type: application
     urls:
-    - https://nstarx.github.io/helm/fl-admin-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/fl-admin-0.1.0.tgz
     version: 0.1.0
   my-cm:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-10T16:10:44.860014+03:00"
+    created: "2025-04-11T09:21:16.732076-07:00"
     description: A Helm chart for Kubernetes
-    digest: e48f9ce7942016d86eea007bcb5ee9bd55b35c95992c4d2c5cc30107ea99fa91
+    digest: cd4731ff3515a204a974b2012ca54072483b5e461270c20aec88dd5321caed31
     name: my-cm
     type: application
     urls:
-    - https://nstarx.github.io/helm/my-cm-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/my-cm-0.1.0.tgz
     version: 0.1.0
   nstarx-kubeflow-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-04-10T16:10:44.860117+03:00"
+    created: "2025-04-11T09:21:16.732336-07:00"
     description: A Helm chart for Kubernetes
-    digest: 98502efd64a39ac4cb43fccc0a6101a6cc8bc73cac34e0cc386aaf4444f407b6
+    digest: 055cb3c44f6b0064ceac616a7c1bfec35f1fd87ad6d2c1ea1616f3e887a9d79c
     name: nstarx-kubeflow-core
     type: application
     urls:
-    - https://nstarx.github.io/helm/nstarx-kubeflow-core-0.0.1.tgz
+    - https://murthy-karra.github.io/helm/releases/nstarx-kubeflow-core-0.0.1.tgz
     version: 0.0.1
   sample-webapp:
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2025-04-10T16:10:44.860237+03:00"
+    created: "2025-04-11T09:21:16.732602-07:00"
     description: A Helm chart for Kubernetes
-    digest: 4c15091b408c19f04ad037674c44dda38ae7cf365b127cd05d9ff1b9f85c9b72
+    digest: 67968af93578837d0a19459e6f68db9d5f465f1e0db148311faec90b5ccf92bc
     name: sample-webapp
     type: application
     urls:
-    - https://nstarx.github.io/helm/sample-webapp-0.1.9.tgz
+    - https://murthy-karra.github.io/helm/releases/sample-webapp-0.1.9.tgz
     version: 0.1.9
   spark-admin:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-04-10T16:10:44.860349+03:00"
+    created: "2025-04-11T09:21:16.73288-07:00"
     description: A Helm chart for Kubernetes
     digest: 32f1a9422f4163b88f0692be82d98f1a9a43808ad763e80e7bd641871478390b
     name: spark-admin
     type: application
     urls:
-    - https://nstarx.github.io/helm/spark-admin-0.1.0.tgz
+    - https://murthy-karra.github.io/helm/releases/spark-admin-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-10T16:10:44.859383+03:00"
+generated: "2025-04-11T09:21:16.729732-07:00"
